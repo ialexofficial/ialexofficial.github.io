@@ -5,12 +5,17 @@ var clear_button = document.querySelector('#clear_preview');
 
 input.addEventListener('change', updateImageDisplay);
 
-function updateImageDisplay() {
+function updateImageDisplay(event, clearing_bool=false) {
   var curFiles = input.files;
-  if(curFiles.length === 0 && !preview.firstChild) {
+  if(clearing_bool) {
+    curFiles = [];
+  }
+  if(curFiles.length == 0) {
     label.style.display = 'block';
      preview.classList.remove('hidden-border');
      clear_button.style.display = 'none';
+     console.log(document.querySelector('.preview img'))
+     document.querySelector('.preview img.preview__photo').remove();
   } else {
     for(var i = 0; i < curFiles.length; i++) {
       if(validFileType(curFiles[i])) {
@@ -31,8 +36,7 @@ function updateImageDisplay() {
 }
 
 clear_button.addEventListener('click', function() {
-  input.prop('value', null);
-  updateImageDisplay();
+  updateImageDisplay('', true);
 });
 
 var fileTypes = [
