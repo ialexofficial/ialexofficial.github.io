@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>App</title>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1>Целевой сбор</h1>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<form action="posting.html" class="flex-base">
+				<div class="input__wrap">
+					<p>Автор</p>
+					<select name="payment_type" id="payment-type">
+						<option value="1">Матвей Правосудов</option>
+						<option value="2">Сергей Сергеич</option>
+						<option value="3">Павел Дуров</option>
+					</select>
+				</div>
+				<div class="input__wrap">
+					<p>Сбор завершится</p>
+					<label class="black-label"><input type="radio" name="end_time">Когда соберем сумму</label>
+					<label class="black-label"><input type="radio" name="end_time">В определенную дату</label>
+				</div>
+				<div class="input__wrap">
+					<p>Дата окончания</p>
+					<input type="date" style="pointer-events: none;">
+				</div>
+				<button href="#" class="form-button disabled">Создать сбор</button>
+			</form>
+		</div>
+	</main>
+	<script src="date.js"></script>
+</body>
+</html>

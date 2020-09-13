@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>App</title>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1>Целевой сбор</h1>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<form action="posting.html" class="flex-base">
+				<div class="file__wrap preview">
+					<button id="clear_preview"></button>
+					<input type="file" name="photos" id="photos" accept=".jpg, .jpeg, .png">
+					<label for="photos"><img src="imgs/photo.png" alt="photo icon">Загрузить обложку</label>
+				</div>
+				<div class="input__wrap">
+					<p>Название сбора</p>
+					<input type="text" placeholder="Название сбора">
+				</div>
+				<div class="input__wrap">
+					<p>Сумма, ₽</p>
+					<input type="number" placeholder="Сколько нужно собрать?">
+				</div>
+				<div class="input__wrap">
+					<p>Цель</p>
+					<input type="text" placeholder="Например, лечение человека">
+				</div>
+				<div class="input__wrap">
+					<p>Описание</p>
+					<textarea rows="2" placeholder="На что пойдут деньги и как они кому-то помогут?"></textarea>
+				</div>
+				<div class="input__wrap">
+					<p>Куда получать деньги</p>
+					<select name="payment_type" id="payment-type">
+						<option value="1">Счет VK Pay · 1234</option>
+						<option value="2">Карта Visa · **** 1234</option>
+						<option value="3">Карта MasterCard · **** 1234</option>
+					</select>
+				</div>
+				<div class="input__wrap">
+					<p>Автор</p>
+					<select name="payment_type" id="payment-type">
+						<option value="1">Матвей Правосудов</option>
+						<option value="2">Сергей Сергеич</option>
+						<option value="3">Павел Дуров</option>
+					</select>
+				</div>
+				<button href="#" class="form-button">Далее</button>
+			</form>
+		</div>
+	</main>
+	<script src="form_listener.js"></script>
+</body>
+</html>
