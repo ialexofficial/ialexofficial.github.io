@@ -1,36 +1,36 @@
 @font-face {
 	font-family: 'San Francisco Pro';
 	src: local('San Francisco Pro Display Thin'), local('San-Francisco-Pro-Display-Thin'),
-	    url('fonts/SFProDisplay-Thin.woff2') format('woff2'),
-	    url('fonts/SFProDisplay-Thin.woff') format('woff'),
-	    url('fonts/SFProDisplay-Thin.ttf') format('truetype');
+	    url('SFProDisplay-Thin.woff2') format('woff2'),
+	    url('SFProDisplay-Thin.woff') format('woff'),
+	    url('SFProDisplay-Thin.ttf') format('truetype');
 	font-weight: 100;
 	font-style: normal;
 }
 @font-face {
     font-family: 'San Francisco Bold';
     src: local('San Francisco Pro Display Regular'), local('San-Francisco-Pro-Display-Regular'),
-        url('fonts/SFProDisplay-Regular.woff2') format('woff2'),
-        url('fonts/SFProDisplay-Regular.woff') format('woff'),
-        url('fonts/SFProDisplay-Regular.ttf') format('truetype');
+        url('SFProDisplay-Regular.woff2') format('woff2'),
+        url('SFProDisplay-Regular.woff') format('woff'),
+        url('SFProDisplay-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
 	font-family: 'TT Commons DemiBold';
-	src: url('fonts/TTCommons-DemiBold.eot');
-	src: url('fonts/TTCommons-DemiBold.eot?#iefix') format('embedded-opentype'),
-		url('fonts/TTCommons-DemiBold.woff') format('woff'),
-		url('fonts/TTCommons-DemiBold.ttf') format('truetype');
+	src: url('TTCommons-DemiBold.eot');
+	src: url('TTCommons-DemiBold.eot?#iefix') format('embedded-opentype'),
+		url('TTCommons-DemiBold.woff') format('woff'),
+		url('TTCommons-DemiBold.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
     font-family: 'San Francisco Bolder';
     src: local('San Francisco Pro Display Light'), local('San-Francisco-Pro-Display-Light'),
-        url('fonts/SFProDisplay-Light.woff2') format('woff2'),
-        url('fonts/SFProDisplay-Light.woff') format('woff'),
-        url('fonts/SFProDisplay-Light.ttf') format('truetype');
+        url('SFProDisplay-Light.woff2') format('woff2'),
+        url('SFProDisplay-Light.woff') format('woff'),
+        url('SFProDisplay-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
