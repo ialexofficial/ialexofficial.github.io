@@ -14,7 +14,6 @@ function updateImageDisplay(event, clearing_bool=false) {
     label.style.display = 'block';
      preview.classList.remove('hidden-border');
      clear_button.style.display = 'none';
-     console.log(document.querySelector('.preview img'))
      document.querySelector('.preview img.preview__photo').remove();
   } else {
     for(var i = 0; i < curFiles.length; i++) {
