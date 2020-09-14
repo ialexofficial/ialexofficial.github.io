@@ -1,0 +1,339 @@
+@font-face {
+	font-family: 'San Francisco Pro';
+	src: local('San Francisco Pro Display Thin'), local('San-Francisco-Pro-Display-Thin'),
+	    url('fonts/SFProDisplay-Thin.woff2') format('woff2'),
+	    url('fonts/SFProDisplay-Thin.woff') format('woff'),
+	    url('fonts/SFProDisplay-Thin.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'San Francisco Bold';
+    src: local('San Francisco Pro Display Regular'), local('San-Francisco-Pro-Display-Regular'),
+        url('fonts/SFProDisplay-Regular.woff2') format('woff2'),
+        url('fonts/SFProDisplay-Regular.woff') format('woff'),
+        url('fonts/SFProDisplay-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'TT Commons DemiBold';
+	src: url('fonts/TTCommons-DemiBold.eot');
+	src: url('fonts/TTCommons-DemiBold.eot?#iefix') format('embedded-opentype'),
+		url('fonts/TTCommons-DemiBold.woff') format('woff'),
+		url('fonts/TTCommons-DemiBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'San Francisco Bolder';
+    src: local('San Francisco Pro Display Light'), local('San-Francisco-Pro-Display-Light'),
+        url('fonts/SFProDisplay-Light.woff2') format('woff2'),
+        url('fonts/SFProDisplay-Light.woff') format('woff'),
+        url('fonts/SFProDisplay-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+	padding: 0;
+	background: #fff;
+	margin: 0;
+	font: 16px 'San Francisco Pro';
+	font-weight: bolder;
+	line-height: 20px;
+	color: #818C99;
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+body * {
+	margin: 0;
+	padding: 0;
+}
+.flex-base {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+header, main {
+	padding: 13.5px 0;
+	position: relative;
+}
+header {
+	border-bottom: solid 0.3px #D7D8D9;
+}
+a {
+	text-decoration: none;
+}
+a, button {
+	cursor: pointer;
+}
+h1, h2 {
+	font-family: 'TT Commons DemiBold';
+	font-weight: bolder;
+	text-align: center;
+	color: #000;
+}
+h1 {
+	font-size: 1.3125em;
+}
+h2 {
+	font-size: 1.25em;
+	text-align: left;
+}
+p, a {
+	margin-bottom: 25px;
+}
+input, textarea, select {
+	font: 16px 'San Francisco Pro';
+	color: #818C99;
+	padding: 12px;
+	border-radius: 10px;
+	background: #F2F3F5;
+	border: 0.5px solid rgba(0, 0, 0, 0.12);
+	resize: none;
+	width: calc(100% - 24px);
+	outline: none;
+}
+.container {
+	height: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: calc(100% - 10px);
+	padding: 0 5px;
+}
+a.button {
+	font-size: 0.9375em;
+	display: block;
+	padding: 8px 16px;
+	color: #fff;
+	background: #4986CC;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	text-align: center;
+	text-decoration: none;
+}
+button.form-button {
+	font-size: 0.9375em;
+	padding: 8px 16px;
+	color: #fff;
+	background: #4986CC;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+}
+.text-center {
+	text-align: center;
+}
+.menu {
+	background: rgba(40, 43, 46, 0.2);
+	border-radius: 10px;
+}
+.collection-type {
+	background: #F5F5F5;
+	flex-direction: row;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	padding: 14px;
+	position: relative;
+	width: calc(100% - 38px);
+	max-width: 350px;
+}
+.collection-type p {
+	margin: 0;
+	text-align: left;
+}
+.collection-type > img {
+	margin-right: 15px;
+	align-self: flex-start;
+	padding-top: 5px;
+}
+.collection-type a {
+	display: block;
+	position: absolute;
+	right: 15px;
+	margin: 0;
+}
+.collection-type .content {
+	align-items: flex-start;
+	max-width: calc(100% - 50px)
+}
+p.bold {
+	color: #000;
+	font-family: 'San Francisco Bold';
+}
+input[type='file'] {
+	display: none;
+}
+form {
+	width: 100%;
+	max-width: 350px;
+	margin: 0 auto;
+}
+form a.button {
+	width: calc(100% - 32px);
+	margin: 0;
+}
+.input__wrap, .file__wrap {
+	margin-bottom: 20px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+.input__wrap p {
+	margin-bottom: 8px;
+	padding-left: 2px;
+}
+.file__wrap {
+	height: 140px;
+	border: 1px dashed #3F8AE0;
+	border-radius: 10px;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+}
+.file__wrap label {
+	color: #3F8AE0;
+}
+.file__wrap label img {
+	width: 22px;
+	height: 22px;
+	vertical-align: middle;
+	margin-right: 8px;
+}
+.black-label {
+	width: 100%;
+	color: #000;
+	margin-bottom: 13px;
+}
+.black-label input {
+	width: auto;
+	margin-right: 13px;
+}
+select {
+	color: #000;
+	width: 100%;
+	font-family: 'San Francisco Bolder';
+}
+input[type="date"] {
+	color: #000;
+	font-family: 'San Francisco Bolder';
+}
+.preview {
+	position: relative;
+}
+.preview img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+}
+.hidden-border {
+	border: none !important;
+}
+#clear_preview {
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	background: #99A2AD;
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	display: none;
+}
+#clear_preview:before, #clear_preview:after {
+	content: '';
+	width: 	14px;
+	height: 2px;
+	background: #fff;
+	border-radius: 2px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotateZ(45deg);
+}
+#clear_preview:before {
+	transform: translate(-50%, -50%) rotateZ(-45deg);
+}
+.entered {
+	font-family: 'San Francisco Bolder';
+	color: #000;
+}
+.disabled {
+	pointer-events: none;
+	opacity: 0.4;
+}
+.content__wrap {
+	border-radius: 10px;
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.01);
+}
+.content__wrap p {
+	font-size: 0.9375em;
+}
+.content__wrap .text__wrap {
+	padding: 8px 12px;
+}
+.progress__wrap {
+	border-top: solid 0.5px #D7D8D9;
+	padding-top: 14px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.help-button {
+	background: transparent;
+	border: 1px solid #3F8AE0;
+	color: #3F8AE0;
+	border-radius: 10px;
+	padding: 6px 16px;
+	display: block;
+	margin: 0;
+}
+.content__wrap .form-button {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	margin-top: 15px;
+}
+.progress-bar__wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	padding-right: 12px;
+}
+.progress-bar__wrap p {
+	align-self: flex-start;
+	color: #000;
+	margin-bottom: 8px;
+}
+.progress-bar {
+	width: 100%;
+	height: 4px;
+	border-radius: 2px;
+	background: #3f8ae047;
+	position: relative;
+}
+.progress-bar.helped:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 80%;
+	height: 4px;
+	z-index: 2;
+	border-radius: 2px;
+	background: #3F8AE0;
+}
